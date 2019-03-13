@@ -13,7 +13,6 @@ body{
 
 html,body{
   height:100%;
-  width:100%;
 }
 
 .wrapper {
@@ -246,4 +245,81 @@ input[type=submit] {
   font-size: 18px;
   padding: 10px 30px;
   cursor: pointer;
+}
+@media only screen and (max-width:980px) {
+  nav {
+    margin-right: 5px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-section,
+  .sidebar {
+    max-width: 100%;
+  }
+
+  main {
+    overflow: auto;
+  }
+
+  .work {
+    /* Box-model */
+    width: 47%;
+
+    /* Positioning */
+    margin-bottom: 10px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .work:nth-child(odd) {
+    float: right;
+  }
+
+  .auth-image {
+    width: 50%;
+  }
+
+  .sidebar {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  main.container {
+    padding-top: 0;
+  }
+
+  #logo,
+  .work,
+  .auth-image {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+
+    margin: 15px 0;
+
+    text-align: center;
+  }
+
+  nav a {
+    width: 30%;
+    padding-left: 0;
+
+    margin-left: 0;
+  }
 }
